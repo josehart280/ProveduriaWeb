@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProveduriaWeb.FacturasCompra>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Impuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MontoTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalImpuestosPagados)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProveedorNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Impuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MontoTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalImpuestosPagados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProveedorNavigation.IdProveedor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdFacturaCompra">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdFacturaCompra">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdFacturaCompra">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProveduriaWeb", "ProveduriaWeb.csproj", "{528CB365-CD3E-458D-BE25-5A22160201A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DAL\DAL.csproj", "{E2B4056A-413C-4AE4-870F-53B4FC105D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{7DCE0580-396B-48D2-A076-E9A3E6B3068F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{528CB365-CD3E-458D-BE25-5A22160201A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528CB365-CD3E-458D-BE25-5A22160201A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528CB365-CD3E-458D-BE25-5A22160201A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528CB365-CD3E-458D-BE25-5A22160201A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B4056A-413C-4AE4-870F-53B4FC105D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B4056A-413C-4AE4-870F-53B4FC105D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B4056A-413C-4AE4-870F-53B4FC105D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B4056A-413C-4AE4-870F-53B4FC105D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCE0580-396B-48D2-A076-E9A3E6B3068F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCE0580-396B-48D2-A076-E9A3E6B3068F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCE0580-396B-48D2-A076-E9A3E6B3068F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCE0580-396B-48D2-A076-E9A3E6B3068F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC846144-B5AB-4EE6-BECA-6B492C8D4401}
+	EndGlobalSection
+EndGlobal
